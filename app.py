@@ -53,7 +53,7 @@ if prompt := st.chat_input("Tuliskan perasaanmu hari ini..."):
     try:
         genai.configure(api_key=api_key)
         model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",
+            model_name="gemini-2.5-flash",
             generation_config={"temperature": temperature},
             system_instruction=system_instructions[mode_option]
         )
